@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Image Classification App</h1>
+    </header>
+
+    <div class="container">
+        <h2>Upload an Image to Classify</h2>
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <input type="submit" value="Upload and Classify">
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 Your Company</p>
+    </footer>
+</body>
+</html>

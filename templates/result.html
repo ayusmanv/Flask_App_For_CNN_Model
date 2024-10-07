@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Image Classification App</h1>
+    </header>
+
+    <div class="container">
+        <h2>Classification Result</h2>
+        <p>{{ results }}</p>
+        <a href="/">Classify another image</a>
+    </div>
+
+    <footer>
+        <p>© 2024 Your Company</p>
+    </footer>
+</body>
+</html>
